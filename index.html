@@ -16,21 +16,31 @@
 
    <script type="text/babel">
 
+      const tabelaChocolates = () =>{
+         return
+         <h1>Tabela de Chocolates</h1>
+         <table id="tabela" border="1">
+            <thead>
+               <tr>
+                  <th>Nome</th>
+                  <th>Marca</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Laka</td>
+                  <td>Lacta</td>
+               </tr>
+            </tbody>
+         </table>
+      }
+
       ReactDOM.render(
-         <div id="app">
-            <table id="tabela" border="1">
-               <thead>
-                  <tr><th>Nome</th><th>Marca</th></tr>
-               </thead>
-               <tbody>
-                  <tr><td>Havana</td><td>Engenho Anísio Santiago</td></tr>
-               </tbody>
-            </table>
-         </div>
+         <tabelaChocolates/>
          ,
       document.getElementById("app"))
 
-      </script>
+   </script>
 
    </body>
 

@@ -3,7 +3,7 @@
 <html>
    <head>
 
-      <title>React Um</title>      
+      <title>React 1</title>      
 
    </head>
    <body>
@@ -12,33 +12,36 @@
       </div>
       <script src="libs/react.js"></script>
       <script src="libs/react-dom.js"></script>
-      <script src="libs/babel.js"></script>
+      <script src="libs/babel.js" charset="utf-8"></script>
 
    <script type="text/babel">
 
       const tabelaChocolates = () =>{
-         return
-         <h1>Tabela de Chocolates</h1>
-         <div>
-            <table id="tabela" border="1">
-               <thead>
-                  <tr>
-                     <th>Nome</th>
-                     <th>Marca</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>Laka</td>
-                     <td>Lacta</td>
-                  </tr>
-                  <tr>
-                     <td>Batom</td>
-                     <td>Garoto</td>
-                  </tr>
-               </tbody>
-            </table>
-         </div>
+         return (
+            
+            <div>
+               <table id="tabela" border="1">
+                  <thead>
+                     <tr>
+                        <th>Nome</th>
+                        <th>Marca</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Laka</td>
+                        <td>Lacta</td>
+                        <td>Batom</td>
+                        <td>Garoto</td>
+                     </tr>               
+                  </tbody>
+               </table>
+            </div>
+         )
+      }
+
+      function cabecalho(){
+         return <h1>Tabela de Chocolates</h1>;
       }
 
       ReactDOM.render(
